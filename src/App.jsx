@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import VisualDropzone from './components/VisualDropzone';
 import ActionConfirmationCard from './components/ActionConfirmationCard';
 import ExecutionHistory from './components/ExecutionHistory';
+import OutcomeChart from './components/OutcomeChart';
 import CabModal from './components/CabModal';
 import Footer from './components/Footer';
 import { MOCK_SCREENSHOTS } from './data/mockScreenshots';
@@ -60,6 +61,9 @@ export default function App() {
           onSelectSample={handleSelectSample}
           onTriggerPaste={() => setIsAnalyzing(true)}
         />
+
+        {/* Julien Bek $1:$6 Economic Engine / Larry Ellison SLA Proof */}
+        <OutcomeChart onCtaClick={() => setIsCabOpen(true)} />
 
         {/* Visual Dropzone & Intent Decomposition */}
         <VisualDropzone
